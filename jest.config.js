@@ -18,10 +18,10 @@ module.exports = {
   ],
   coverageThreshold: { // 配置测试最低阈值
     global: {
-      branches: 100,
-      functions: 100,
-      lines: 100,
-      statements: 100
+      branches: 50,
+      functions: 50,
+      lines: 50,
+      statements: 50
     }
 	},
 	moduleFileExtensions: [
@@ -31,5 +31,6 @@ module.exports = {
     "ts",
     "tsx",
     "node"
-  ],
+	],
+	setupFiles: ["jest-useragent-mock"]
 }

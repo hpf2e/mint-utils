@@ -2,4 +2,6 @@ const version: string = require('../package.json').version;
 
 export { version };
 
-export { default as clone } from './clone';
+export { default as getType } from './getType';
+export { default as getUA } from './getUA';
+export { default as semverCompare } from './semverCompare';
