@@ -23,7 +23,7 @@
     "commit": "cz",
     "build": "npm run eslint && npm run prettier && rm -rf lib && rollup --config",
     "cz": "git-cz",
-    "test": "nyc jest --no-cache",
+    "test": "jest --coverage",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "publish:pre": "npm run build && npm run cz && npm run changelog",
     "publish": "node scripts/publish.js"
