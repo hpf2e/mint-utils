@@ -12,5 +12,5 @@ script:
   - npm run test
   - codecov
 after_success:
-  - export CODECOV_TOKEN=e88e9099-fc9d-4b60-8a66-4e3fdccde64c
+  - export CODECOV_TOKEN="e88e9099-fc9d-4b60-8a66-4e3fdccde64c"
   - bash <(curl -s https://codecov.io/bash)

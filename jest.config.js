@@ -3,8 +3,8 @@ module.exports = {
   collectCoverage: true, // 收集测试时的覆盖率信息
   coverageDirectory: path.resolve(__dirname, './coverage'), // 指定输出覆盖信息文件的目录
   collectCoverageFrom: [ // 指定收集覆盖率的目录文件，只收集每个包的lib目录，不收集打包后的dist目录
-		'modules/**/**',
-		'!modules/**'
+		'modules/**/*.ts',
+		'!modules/index.ts'
 	],
 	transform: {
     "^.+.(tsx|ts)?$": "ts-jest"
