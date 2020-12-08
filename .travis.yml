@@ -8,7 +8,7 @@ addons:
 before_install: 
   - npm i -g codecov
 install:
-  - npm
+  - npm i
 script:
   - npm run test
   - codecov
