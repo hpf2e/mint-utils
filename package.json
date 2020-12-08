@@ -40,7 +40,7 @@
     }
   },
   "lint-staged": {
-    "mudules/**/*.ts": [
+    "modules/**/*.ts": [
       "npm run eslint",
       "npm run prettier"
     ]
