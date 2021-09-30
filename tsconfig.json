@@ -62,7 +62,7 @@
 	},
   "exclude": [
     "node_modules",
-		"modules/**/__test__/*",
+		"modules/**/__tests__/*",
     "lib/*"
   ]
 }
