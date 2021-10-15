@@ -1,6 +1,6 @@
 {
   "name": "mint-utils",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "project created by mint-cli",
   "main": "lib/mint-utils.common.js",
   "module": "lib/mint-utils.esm.js",
@@ -29,7 +29,9 @@
     "test": "jest --coverage",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "publish:pre": "npm run build && npm run cz && npm run changelog",
-    "publish": "node scripts/publish.js"
+    "publish": "node scripts/publish.js",
+		"doc": "jsdoc -c jsdoc.json",
+		"tsdoc": "tsc --p tsconfig.jsdoc.json"
   },
   "config": {
     "commitizen": {

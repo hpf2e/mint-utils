@@ -9,3 +9,5 @@ package-lock.json
 yarn.lock
 *.log
 .nyc_output
+docs
+stats.html
