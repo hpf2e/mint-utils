@@ -1,3 +1,10 @@
+/*
+ * @Author: alex_chen
+ * @Date: 2021-09-28 14:45:50
+ * @LastEditors: alex_chen
+ * @LastEditTime: 2022-05-11 11:24:59
+ * @Description: 文件描述
+ */
 const path = require('path')
 module.exports = {
   collectCoverage: true, // 收集测试时的覆盖率信息
@@ -32,5 +39,6 @@ module.exports = {
     "tsx",
     "node"
 	],
-	setupFiles: ["jest-useragent-mock"]
+	setupFiles: ["jest-useragent-mock"],
+	setupFilesAfterEnv: [`${__dirname}/test/setup/test-setup.js`]
 }
